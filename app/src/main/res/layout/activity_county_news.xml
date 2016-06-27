@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountyNews"
+    android:background="@drawable/dark_blue">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/buttonCountyRefresh"
+        android:background="@drawable/rounded_btn"
+        android:textColor="#e8eaf6"/>
+
+    <ListView
+        android:id="@+id/listCounty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/buttonCountyRefresh"/>
+
+    <ImageButton
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:id="@+id/imageButtonCountyHome"
+        android:src="@drawable/ic_action_home"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rounded_btn"/>
+
+</RelativeLayout>
